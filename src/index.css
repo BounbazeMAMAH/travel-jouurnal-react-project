@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic ', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+nav{
+  text-align: center;
+  padding: 15px 0;
+  background-color: rgb(220, 74, 74);
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.locate{
+  display: flex;
+  gap: 20px;
+}
+.locate a{
+  font-size: 12px;
+  color: rgb(181, 181, 181);
+}
+.locate p{
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+.card{
+  display: flex;
+  gap: 25px;
+  padding: 30px 20px;
+  align-items: center;
+}
+.card img{
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+}
+.card h3{
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 7px;
+}
+.card .date{
+  font-size: 13px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.card .describe{
+  font-size: 13px;
+  margin-top: 10px;
+  padding-right: 50px;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+
+  .card img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .card .describe {
+    padding-right: 0; 
+}
+}
+
+@media (max-width: 480px) {
+  .card h3 {
+    font-size: 20px; 
+  }
+
+  .card .date,
+  .card .describe {
+    font-size: 12px; 
+  }
+
+  .locate {
+    flex-direction: column; 
+    gap: 10px; 
+  }
+}
